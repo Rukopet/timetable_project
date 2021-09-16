@@ -1,0 +1,6 @@
+[submodule "timetable_algorithm"]
+	path = timetable_algorithm
+	url = https://github.com/Rukopet/timetable_algorithm.git
+[submodule "timetable"]
+	path = timetable
+	url = https://github.com/Rukopet/timetable.git
