@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/timetable" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/timetable_algorithm" vcs="Git" />
   </component>
 </project>
