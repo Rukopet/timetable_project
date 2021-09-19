@@ -38,7 +38,7 @@ Cерверное кроссплатформенное решение. Подр�
 ## Используемые наборы данных
 Пример сформированных данных:
 ![data_example](https://user-images.githubusercontent.com/69805852/133895495-4e20f5d7-0636-47c6-ab80-c23f90b42da3.png)
-Ссылка на сформированные на фронте данные [ссылка](https://github.com/Rukopet/timetable_algorithm/tree/main/timetable_genetic_algorithm/data_for_test)
+[Ссылка на данные](https://github.com/Rukopet/timetable_algorithm/tree/main/timetable_genetic_algorithm/data_for_test) сформированные на фронте
 
 
 
