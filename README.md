@@ -116,7 +116,7 @@ bash start_project.sh
 ## Используемые наборы данных
 Пример сформированных данных:
 ![data_example](https://user-images.githubusercontent.com/69805852/133895495-4e20f5d7-0636-47c6-ab80-c23f90b42da3.png) <br>
-[Ссылка](https://github.com/Rukopet/timetable_algorithm/tree/main/timetable_genetic_algorithm/data_for_test) на пример данных сформированных на фронте
+[Ссылка](https://github.com/Rukopet/timetable_algorithm/tree/main/timetable_genetic_algorithm/data_for_test) на пример данных, сформированных на фронте
 
 
 
