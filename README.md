@@ -125,8 +125,15 @@ bash start_project.sh
 В репозитории залиты стандартные [переменные](https://github.com/Rukopet/timetable_project/blob/main/.default/.env), чтобы их заменить на свои, или заменить на свои частично - заполните .env в корне репозитория; Пример: <br>
 <img width="628" alt="Screen Shot 2021-09-19 at 7 01 53 PM" src="https://user-images.githubusercontent.com/69805852/133934365-62ccf7cb-04ac-424d-b914-fc867603ca4a.png">
 
-  
+### Использвание алгоритма как обычного пайтон пакета <br>
+```
+python -m timetable_genetic_algorithm <Папка с данными> <(Опционально) Файл>
+```
+#### Требования
+Папка с данными - абсолютный путь к папке с данными <br>
+В папке с данными должны лежать необходимые файлы, на данный момент это 5 [файлов](https://github.com/Rukopet/timetable_algorithm/tree/main/timetable_genetic_algorithm/requaried_data_example)
 
+Файл - (опционально) путь + имя файла по которому необходимо сохранить файл, без расширения
 
 
 
