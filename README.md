@@ -17,7 +17,6 @@
 
 ![Схема работы](https://user-images.githubusercontent.com/74075500/133910347-501259cb-b4c9-42d7-a811-8606aaf4d907.png)
 
-![data_example](https://user-images.githubusercontent.com/69805852/133895495-4e20f5d7-0636-47c6-ab80-c23f90b42da3.png)
 
   
 ## Требования к окружению для запуска продукта
@@ -30,7 +29,8 @@
 
 ## Примеры использования
 
-## Используемые наборы данных!
+## Используемые наборы данных
+![data_example](https://user-images.githubusercontent.com/69805852/133895495-4e20f5d7-0636-47c6-ab80-c23f90b42da3.png)
 
 
 ## Дополнительный инструментарий
