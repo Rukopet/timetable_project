@@ -1,0 +1,63 @@
+version: '3.0'
+
+services:
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    depends_on:
+      db:
+        condition: service_started
+
+
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+
+
+  web:
+    build: timetable
+    command: bash -c "cd web_app/timetable_core && python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - 8000:8000
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - DB_HOST=db
+      - ALGORITHM_HOST=algorithm
+      - ALGORITHM_PORT_OUT=${ALGORITHM_PORT_OUT}
+    depends_on:
+      db:
+        condition: service_started
+      algorithm:
+        condition: service_started
+
+
+  algorithm:
+    build: timetable_algorithm
+    command: bash -c "cd algorithm_app && python -m timetable_genetic_algorithm"
+    volumes:
+      - ./timetable_algorithm/data:/algorithm_app/data
+    ports:
+      - ${ALGORITHM_PORT_OUT}:${ALGORITHM_PORT_IN}
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - DB_HOST=db
+      - WEB_SERVER_HOST=web
+      - EMAIL=${EMAIL}
+      - EMAIL_PASS=${EMAIL_PASS}
+      - ALGORITHM_PORT_IN=${ALGORITHM_PORT_IN}
+      - ALGORITHM_PORT_OUT${ALGORITHM_PORT_OUT}
+    depends_on:
+      db:
+        condition: service_started
