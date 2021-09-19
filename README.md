@@ -46,10 +46,9 @@
 Иначе – возвращение к п. 3* <br>
 
 ### Промежуточный результат:
-
-<img width="1103" alt="Screen Shot 2021-09-19 at 1 47 18 PM" src="https://user-images.githubusercontent.com/74075500/133929978-e02ded7f-9666-461f-b4ba-dcc7640db429.png">
 **Зеленый - лучшее расписание** <br>
-**Зеленый - среднее значение** <br>
+**Красный - среднее значение** <br>
+<img width="1103" alt="Screen Shot 2021-09-19 at 1 47 18 PM" src="https://user-images.githubusercontent.com/74075500/133929978-e02ded7f-9666-461f-b4ba-dcc7640db429.png">
 **Параметры запуска алгоритма:** <br>
 **Популяция**: 500 особей <br>
 **Поколения**: 1000. <br>
