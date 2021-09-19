@@ -121,6 +121,10 @@ bash start_project.sh
 
 
 ## Дополнительный инструментарий
+### Конфигурация .env
+В репозитории залиты стандартные [переменные](https://github.com/Rukopet/timetable_project/blob/main/.default/.env), чтобы их заменить на свои, или заменить на свои частично - заполните .env в корне репозитория; Пример: <br>
+<img width="628" alt="Screen Shot 2021-09-19 at 7 01 53 PM" src="https://user-images.githubusercontent.com/69805852/133934365-62ccf7cb-04ac-424d-b914-fc867603ca4a.png">
+
   
 
 
