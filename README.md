@@ -144,5 +144,5 @@ python -m timetable_genetic_algorithm <Папка с данными> <(Опци�
  - **Пароль** - postgres
 
 
-
+## [orginal repository](https://github.com/Rukopet/timetable_project)
 
