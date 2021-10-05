@@ -31,10 +31,6 @@ compose_start() {
   docker-compose -f  docker-compose.yaml up
 }
 
-restart() {
-
-}
-
 code_reload() {
   docker-compose up --detach --build
 }
