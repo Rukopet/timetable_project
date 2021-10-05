@@ -41,4 +41,6 @@ code_reload() {
 
 if [ $1 = 'reload' ]; then
   code_reload
+elif [ $1 = 'start' ]; then
+  compose_start
 fi
