@@ -109,7 +109,7 @@ cd school-schedule
 ```
 #### Запустить сборку проекта
 ```
-bash start_project.sh
+bash start_project.sh start
 ```
 ## Примеры использования
 
